@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+   >
+
+    <!-- Title -->
+    <!-- Back Button -->
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_back"
+        android:contentDescription="Back Button" />
+
+    <TextView
+        android:id="@+id/create_account_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create account"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Username"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_username"
+        />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Password"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_password"
+    />
+
+    <!-- E-mail -->
+    <EditText
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"
+        android:drawableLeft="@drawable/ic_email"
+    />
+
+    <!-- Mobile -->
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Mobile"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/black"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/ic_mobile"
+    />
+
+    <!-- Create Button -->
+    <Button
+        android:id="@+id/create_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Create"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Social Media Login -->
+
+    <!-- Social Media Buttons -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="create account using social media"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/facebook_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_facebook"
+        />
+
+        <ImageButton
+            android:id="@+id/twitter_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_twitter"
+        />
+
+        <ImageButton
+            android:id="@+id/google_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_google"
+        />
+    </LinearLayout>
+
+</LinearLayout>

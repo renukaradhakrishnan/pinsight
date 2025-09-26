@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <!-- Brain Icon -->
+    <ImageView
+        android:id="@+id/brainIcon"
+        android:layout_width="149dp"
+        android:layout_height="167dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/brainn" />
+
+    <!-- Greeting Text -->
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good morning,"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/brainIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your personality is the key to understanding yourself\nReady to unlock it?"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/greetingText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Start Quiz Button -->
+    <Button
+        android:id="@+id/startQuizButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
